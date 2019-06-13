@@ -38,7 +38,7 @@ if [ ! -f ./2019-04-08-raspbian-stretch-lite.img ] && [ ! -f ./2019-04-08-raspbi
     unzip 2019-04-08-raspbian-stretch-lite.zip
 else
     echo "2019-04-08-raspbian-stretch-lite file exists"
-    if [ ! -f ./2019-04-08-raspbian-stretch-lite.zip ]; then
+    if [ ! -f ./2019-04-08-raspbian-stretch-lite.img ]; then
         unzip 2019-04-08-raspbian-stretch-lite.zip
     fi
 fi
