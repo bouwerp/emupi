@@ -26,3 +26,7 @@ The initial password for the _pi_ user is _raspberry_. To use SSH key authenitca
 ```
 ssh-copy-id -p 5022 pi@localhost
 ```
+
+## Networking from guest to host
+
+The property `guestfwd=tcp:10.0.2.200:1234-cmd:nc 192.168.0.100 8842` determines how the guest will access a port on the host, e.g. a web server running on the host. The first IP, `10.0.2.200`, is the ip that the guest will use to access the port. Port `1234` on the guest is mapped to port 8842 on the host, where `192.168.0.100` is the ip address of the host.
